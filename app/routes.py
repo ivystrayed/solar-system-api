@@ -32,4 +32,25 @@ def get_all_planets():
         response.append(planet_dict)
     return jsonify(response), 200
     
+@planet_bp.route("/<planet_name>", methods=["GET"])
+def call_a_planet(planet_name):
+    
+    if planet_name.isalpha() == False or planet_name.islower() == False:
+        return jsonify({"message" : "Planet plathways will be lowercase with no special characters or numbers"}), 400
+
+    for planet in planets_list:
+        if planet.name.lower() == planet_name:
+            response =  {
+            "id": planet.id,
+            "name": planet.name,
+            "description": planet.description        
+             }
+            return jsonify(response), 200
+     
+     
+    return jsonify({"message": f"{planet_name} not found."}),404
+         
+
+  
+
     

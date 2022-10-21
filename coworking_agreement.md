@@ -15,7 +15,7 @@ If both parties have a comfortable understanding of topic work independently to 
 ## Learning Style
 *How does each team member learn best in project settings?*
 
-Ivy: Hand on learning style, lots of running half done code. goal: try to communicate through thought process
+Ivy: Hand on learning style, lots of running half done code. goal: try to communicate through thought process. Apart of my learning style is falling behind and catching up alot, I will work harder to stay up to date on lessons so i am fully able to particiapte in coworking. 
 
 Alma: Read the instructions first, search a little bit any doubts and then start coding. 
 Goal: work more in doing, and faster in reading.
