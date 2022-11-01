@@ -62,7 +62,7 @@ def get_all_planets():
             "id": planet.id,
             "name": planet.name,
             "description": planet.description,
-            "distance from sun" : planet.distant_from_sun        
+            "distance from sun" : planet.distance_from_sun        
         }
         response.append(planet_dict)
     
