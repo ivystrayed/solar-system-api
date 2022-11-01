@@ -1,5 +1,6 @@
 from flask import Blueprint, jsonify, request, make_response
 from app import db
+from app.models import planet
 from app.models.planet import Planet
 
 
@@ -26,6 +27,28 @@ def add_planet():
     db.session.commit()
     
     return make_response(f"{new_planet.name} was added", 201)
+
+# need to add a patch function here 
+@planet_bp.route("/<planet_name>", methods=["PATCH"])
+def update_planet_info():
+    pass 
+
+    # if or try to create the 404
+
+    #update info
+
+    # response
+
+
+#delete function here 
+@planet_bp.route("/<planet_name>", methods=["DELETE"])
+def delete_planet():
+    # 404 if planet doesnt exist
+
+    # delete command
+
+    # response
+    pass 
 
 
 
