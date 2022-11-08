@@ -19,4 +19,6 @@ class Planet(db.Model):
     def validate_planet(self):
         if self.isalpha() == False or self.islower() == False:
             return jsonify({"message" : "Planet plathways will be lowercase with no special characters or numbers"}), 400
+        else:
+            return True
 
